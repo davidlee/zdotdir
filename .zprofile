@@ -3,6 +3,9 @@
 # .zprofile - Zsh file loaded on login.
 #
 
+# load aliases
+source ${ZDOTDIR:-~}/.aliases
+
 #
 # Browser
 #

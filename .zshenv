@@ -28,7 +28,7 @@ SAVEHIST=1000000000              # The maximum number of events to save in the h
 # highlight style
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor root line)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4e4e4e"
-ZSH_HIGHLIGHT_STYLES[cursor]='bg=#4e4e4e'
+#ZSH_HIGHLIGHT_STYLES[cursor]='bg=#4e4e4e'
 
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.

@@ -13,6 +13,7 @@
 # ripgrep - faster and better grep
 # nvim - better vim
 # tldr - super-condensed man
+# lsd - better ls / tree
 
 # brew install zoxide exa fzf ripgrep nvim tldr
 
@@ -20,9 +21,6 @@
 setopt extended_glob
 # show hidden files in completion
 setopt glob_dots
-
-# use emacs bindings
-bindkey -e
 
 ##
 # ANTIDOTE
@@ -46,3 +44,6 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
 # statically load plugins from ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
+
+# use emacs bindings
+bindkey -e

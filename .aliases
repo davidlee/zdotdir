@@ -19,8 +19,15 @@ alias vi=nvim
 # more ways to ls
 alias l='exa '
 alias ll='exa --long --all --group-directories-first --git'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
+alias la='lsd -lAh'
+alias ldot='lsd -ld .*'
+
+# tree
+alias trd='tree -type d'
+alias trl='tree -L '
+alias trc='tree -a -C'
+alias trcl='tree -a -C -L '
+
 
 # fix common typos
 alias quit='exit'
@@ -39,6 +46,24 @@ alias urldecode='python3 -c "import sys, urllib.parse as ul; \
     print(ul.unquote_plus(sys.argv[1]))"'
 alias urlencode='python3 -c "import sys, urllib.parse as ul; \
     print (ul.quote_plus(sys.argv[1]))"'
+
+# stolen from prezto/homebrew
+alias brewc='brew cleanup'
+alias brewi='brew install'
+alias brewL='brew leaves'
+alias brewl='brew list'
+alias brewo='brew outdated'
+alias brews='brew search'
+alias brewu='brew upgrade'
+alias brewx='brew uninstall'
+
+# Homebrew Cask
+alias caski='brew install --cask'
+alias caskl='brew list --cask'
+alias casko='brew outdated --cask'
+alias casks='brew search --cask'
+alias casku='brew upgrade --cask'
+alias caskx='brew uninstall --cask'
 
 # misc
 alias please=sudo

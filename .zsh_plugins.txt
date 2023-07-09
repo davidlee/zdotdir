@@ -39,7 +39,7 @@ agkozak/zsh-z
 # host your own custom plugins.
 #
 ###
-$ZDOTDIR/.aliases
+
 #$ZDOTDIR/custom/plugins/example
 
 ### Local Plugins with Variables
