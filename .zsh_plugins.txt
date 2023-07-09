@@ -3,6 +3,8 @@
 # .zsh_plugins.txt - antidote plugins file
 #
 
+# refs: https://insanet.eu/post/supercharge-your-terminal/
+
 ### Overview
 #
 # The `.zsh_plugins.txt` file is used by antidote to configure Zsh bundles. Bundles are
@@ -208,6 +210,9 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 # zsh-users/zsh-completions is a popular plugin for adding supplemental completions.
 # We combine the `path:` and `kind:fpath` annotations here:
 zsh-users/zsh-completions path:src kind:fpath
+
+# wild fuzzy find completion
+Aloxaf/fzf-tab
 
 # Compinit plugins should be near the end of .zsh_plugins.txt so that $fpath has been
 # fully populated. Use zsh-utils for its completion plugin.

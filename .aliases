@@ -8,17 +8,23 @@ alias _=sudo
 alias l=ls
 alias g=git
 
+alias gc=git commit -v
+alias gs=git status
+alias gco=git checkout
+alias gcl=git clone
+
 # mask built-ins with better defaults
-alias vi=vim
+alias vi=nvim
 
 # more ways to ls
-alias ll='ls -lh'
+alias l='exa '
+alias ll='exa --long --all --group-directories-first --git'
 alias la='ls -lAh'
 alias ldot='ls -ld .*'
 
 # fix common typos
 alias quit='exit'
-alias cd..='cd ..'
+alias cd..='cd ..' # or use `up`
 
 # tar
 alias tarls="tar -tvf"
@@ -36,6 +42,6 @@ alias urlencode='python3 -c "import sys, urllib.parse as ul; \
 
 # misc
 alias please=sudo
-alias zshrc='${EDITOR:-vim} "${ZDOTDIR:-$HOME}"/.zshrc'
+alias zrc='${EDITOR:-nvim} "${ZDOTDIR:-$HOME}"/.zshrc'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 alias zdot='cd ${ZDOTDIR:-~}'

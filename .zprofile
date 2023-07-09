@@ -15,9 +15,10 @@ fi
 # Editors
 #
 
-export EDITOR="${EDITOR:-vim}"
-export VISUAL="${VISUAL:-vim}"
+export EDITOR="${EDITOR:-nvim}"
+export VISUAL="${VISUAL:-nvim}"
 export PAGER="${PAGER:-less}"
+
 
 #
 # Paths
@@ -31,5 +32,20 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
+  $HOME/Library/Application Support/JetBrains/Toolbox/scripts
+  $HOME/Library/Python/3.9/bin
   $path
 )
+
+### Golang
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+
+### Python
+eval "$(pyenv init -)"
+
+# Set editor default keymap to emacs (`-e`) or vi (`-v`)
+bindkey -e
+
+### this should always be last
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
