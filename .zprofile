@@ -6,13 +6,13 @@
 # load aliases
 source ${ZDOTDIR:-~}/.aliases
 
-#
-# Browser
-#
+# #
+# # Browser
+# #
 
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER="${BROWSER:-open}"
-fi
+# if [[ "$OSTYPE" == darwin* ]]; then
+#   export BROWSER="${BROWSER:-open}"
+# fi
 
 #
 # Editors
@@ -40,15 +40,17 @@ path=(
   $path
 )
 
+source "/Users/davidlee/.asdf/installs/rust/1.70.0/env"
+
 ### Golang
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
+#export GOPATH=$HOME/go
+#export GOROOT="$(brew --prefix golang)/libexec"
 
 ### Python
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
 bindkey -e
 
 ### this should always be last
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. "$HOME/.asdf/asdf.sh"

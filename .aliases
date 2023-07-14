@@ -28,7 +28,6 @@ alias trl='tree -L '
 alias trc='tree -a -C'
 alias trcl='tree -a -C -L '
 
-
 # fix common typos
 alias quit='exit'
 alias cd..='cd ..' # or use `up`
@@ -70,3 +69,6 @@ alias please=sudo
 alias zrc='${EDITOR:-nvim} "${ZDOTDIR:-$HOME}"/.zshrc'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 alias zdot='cd ${ZDOTDIR:-~}'
+
+# dotfile management
+alias config='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

@@ -22,7 +22,7 @@ fi
 # tldr - super-condensed man
 # lsd - better ls / tree
 
-# brew install zoxide exa fzf ripgrep nvim tldr
+# brew install zoxide exa fzf ripgrep nvim tldr lsd ncdu tree
 
 # Zsh options.
 setopt extended_glob
@@ -57,3 +57,7 @@ bindkey -e
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+
+# hax from the asdf direnv plugin to load asdf w. improved perf
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
